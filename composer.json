@@ -24,7 +24,6 @@
     ],
     "require": {
         "composer/installers": "~1.0",
-        "htmlburger/carbon-fields": "1.5",
         "hwp/hwp-dev-blade": "dev-master"
     }
 }
