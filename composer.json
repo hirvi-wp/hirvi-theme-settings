@@ -1,0 +1,30 @@
+{
+    "name": "hwp/hwp-theme-settings",
+    "description": "A plugin to use with your custom theme. Turn on and off core options.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0",
+    "homepage": "https://hirvi.no/",
+    "authors": [
+        {
+            "name": "Chris Magnussen",
+            "email": "chris@hirvi.no",
+            "homepage": "https://hirvi.no/team/chris-magnussen/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "HWP\\Theme\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/hirvi-wp/hwp-dev-blade.git"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.0",
+        "htmlburger/carbon-fields": "1.5",
+        "hwp/hwp-dev-blade": "dev-master"
+    }
+}
