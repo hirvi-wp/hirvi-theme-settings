@@ -40,6 +40,11 @@ class Head
     public function run()
     {
         $options = carbon_get_theme_option('hwp_theme_head');
+
+        if (  ! $options) {
+            return;
+        }
+
         $filters = $this->getHeadFilters();
         $filter_keys = array_keys($this->getHeadFilters());
         $diff = array_diff($filter_keys, $options);
